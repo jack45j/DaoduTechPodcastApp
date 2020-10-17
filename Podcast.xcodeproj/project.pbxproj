@@ -161,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				46BE6CCC2536FB26001783FE /* ViewModelType.swift */,
-				46BE6CD625370F50001783FE /* Array+additions.swift */,
 				467271EB25389DA0009AAEC6 /* RxHysteriaPlayerDelegateProxy.swift */,
 				467271ED25389F3D009AAEC6 /* HysteriaPlayer+Rx.swift */,
 				467271FF253B11D8009AAEC6 /* UIViewController+Rx.swift */,
@@ -172,6 +171,7 @@
 		46BE6CD325370EC4001783FE /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				46BE6CD625370F50001783FE /* Array+additions.swift */,
 				46BE6CD425370F1D001783FE /* FeedParser+additions.swift */,
 				467271F32538D6DB009AAEC6 /* HysteriaPlayerManager.swift */,
 				46BE6CD125370988001783FE /* EndPoints.swift */,
