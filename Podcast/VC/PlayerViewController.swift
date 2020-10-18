@@ -21,17 +21,15 @@ class PlayerViewController: UIViewController {
 	
 	let disposeBag = DisposeBag()
 	var currentEpisode: Int!
-	var viewModel: PlayerVCViewModel!
+	var viewModel: PlayerVCViewModel! = PlayerVCViewModel()
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
-		viewModel = PlayerVCViewModel()
-		
+		bindViewModel()
 		Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { [weak self] _ in
 			self?.durationSlider.value = HPManager.shared.hysteriaPlayer.getPlayingItemCurrentTime()
 		})
 		durationSlider.isContinuous = false
-		bindViewModel()
     }
 	
 	func bindViewModel() {
