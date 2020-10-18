@@ -36,14 +36,11 @@ class PlayerVCViewModel: ViewModelType {
 	
 	/// ViewModel Dependencies
 	///
-	struct Dependencies {}
-	private let dependencies: Dependencies!
+	typealias Dependencies = Void
 	
 	/// initializer of ViewModel
 	///
-	init(dependencies: Dependencies? = nil) {
-        self.dependencies = dependencies
-    }
+	init() {}
 	
 	/// transform viewModel inputs to outputs
 	///

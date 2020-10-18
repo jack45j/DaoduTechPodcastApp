@@ -34,7 +34,7 @@ class EpisodeVCViewModel: ViewModelType {
 	
 	/// initializer of ViewModel
 	///
-	init(dependencies: Dependencies? = nil) {
+	init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
 	
